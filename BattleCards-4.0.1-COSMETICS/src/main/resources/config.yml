@@ -1,0 +1,121 @@
+settings:
+  staff:
+    bypass-permission: true
+    default-cosmetic: void
+
+  rewards:
+    shards-per-win: 10
+    title-unlocks:
+      - "25:Duelist"
+      - "75:Card Adept"
+      - "150:Spellblade"
+      - "300:Arena Champion"
+      - "600:Legend of Cards"
+      - "1200:Grandmaster of the Arcane"
+      - "2500:Eternal Cardlord"
+
+  card-restrictions:
+    admin-only-message: "&cThis card is restricted to admins and above."
+
+  mode:
+    prevent-block-break: true
+    prevent-block-place: true
+    prevent-item-drop: true
+    restore-inventory: true
+
+  mana:
+    max: 100
+    regen-per-second: 5
+    regen-ticks: 20
+
+  music:
+    enabled: true
+    sound: RECORD_MELLOHI
+    volume: 1.0
+    pitch: 1.0
+    loop: true
+    interval-seconds: 120
+
+  battle:
+    challenge-timeout-seconds: 30
+    countdown-seconds: 3
+
+  arena:
+    enabled: true
+    world: world
+    spawn1:
+      x: 0
+      y: 70
+      z: 0
+      yaw: 0
+      pitch: 0
+    spawn2:
+      x: 10
+      y: 70
+      z: 0
+      yaw: 180
+      pitch: 0
+    restore-location-after-match: true
+
+  winner-rewards:
+    fireball: 1
+
+  summons:
+    max-per-player: 3
+    target-range: 12
+    target-height-range: 6
+
+  mage-armor:
+    damage-multiplier: 0.65
+
+  rituals:
+    damage-bonus-percent: 50.0
+    duration-seconds: 5
+    circle-radius: 2.3
+    stay-distance: 3.0
+
+  domain-tower:
+    flight-radius: 10.0
+  combat-log:
+    seconds: 15
+
+  economy:
+    currency-name: "Card Coins"
+    currency-short: "CC"
+    official-win-cc: 250
+
+  structures:
+    default-wall-duration: 20
+    default-tower-duration: 30
+    default-watchtower-duration: 35
+    default-fortress-duration: 45
+
+  effects:
+    # Approximate number of particles in the main burst for each card use.
+    # Lower this if your server/client struggles with heavy effects.
+    particle-budget: 900
+
+messages:
+  prefix: "&6[BattleCards] &r"
+  mode-enter: "&aBattleCards mode activated! &7Your cards are ready in your hotbar. Use &f/bc cards &7to browse the full library."
+  mode-exit: "&cBattleCards mode disabled."
+  not-mode: "&cYou must use &f/bc player &cfirst."
+  no-permission: "&cYou don't have permission."
+  challenge-sent: "&aChallenge sent to &e%player%&a."
+  challenge-received: "&e%player% &ahas challenged you! Type &f/accept &ato fight."
+  challenge-expired: "&cThat challenge expired."
+  no-challenge: "&cYou have no pending challenge."
+  already-battle: "&cYou are already in a card battle."
+  already-in-match: "&cOne of those players is already in a card battle."
+  already-in-battle: "&cOne of those players is already in a card battle."
+  challenge-accepted: "&aCard battle accepted!"
+  winner: "&6%player% &awon the card battle!"
+  no-target: "&cNo valid target is in range."
+  cooldown: "&cCard cooldown: &e%time%s"
+  not-enough-mana: "&bNot enough mana! &7You need &e%mana% &7more."
+  card-used: "&7Played &f%card&7."
+  reloaded: "&aBattleCards reloaded."
+  created: "&aCreated card &e%id&a."
+  deleted: "&aDeleted card &e%id&a."
+
+

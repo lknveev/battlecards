@@ -1,0 +1,1 @@
+package com.cardcombat;import org.bukkit.command.*;import org.bukkit.entity.Player;public final class MissionsCommand implements CommandExecutor{private final CardCombatPlugin p;public MissionsCommand(CardCombatPlugin p){this.p=p;}public boolean onCommand(CommandSender s,Command c,String l,String[]a){if(s instanceof Player)p.economy().showMissions((Player)s);return true;}}

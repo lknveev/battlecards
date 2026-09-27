@@ -1,0 +1,1 @@
+package com.cardcombat;import org.bukkit.command.*;import org.bukkit.entity.Player;public final class AcceptCommand implements CommandExecutor{private final ChallengeManager m;public AcceptCommand(CardCombatPlugin p,ChallengeManager m){this.m=m;}public boolean onCommand(CommandSender s,Command c,String l,String[]a){if(s instanceof Player)m.accept((Player)s);return true;}}
